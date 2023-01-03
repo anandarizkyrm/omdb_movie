@@ -35,7 +35,7 @@ module.exports = {
   rules: {
     'prettier/prettier': ['error', {}, { usePrettierrc: true }],
     'no-unused-vars': [
-      'error',
+      'warn',
       { vars: 'all', args: 'after-used', ignoreRestSiblings: false },
     ],
     'react/react-in-jsx-scope': 'off',
@@ -44,13 +44,5 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': 'off',
     'simple-import-sort/imports': 'error',
     'simple-import-sort/exports': 'error',
-    'jsx-a11y/anchor-is-valid': [
-      'warning',
-      {
-        components: ['Link'],
-        specialLink: ['hrefLeft', 'hrefRight'],
-        aspects: ['invalidHref', 'preferButton'],
-      },
-    ],
   },
 };

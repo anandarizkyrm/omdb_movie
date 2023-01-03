@@ -1,6 +1,6 @@
 import React from 'react';
-import TopNavbar from '../../organisms/TopNavbar/TopNavbar';
-import './Layout.css';
+
+import Navbar from '../../organisms/Navbar';
 
 type Props = {
   children: React.ReactNode;
@@ -9,10 +9,10 @@ type Props = {
 const Layout = (props: Props) => {
   const { children } = props;
   return (
-    <>
-      <TopNavbar title="To Do List App" />
-      <div className="layout-container">{children}</div>
-    </>
+    <div className="">
+      <Navbar />
+      <div className="px-32 py-20">{children}</div>
+    </div>
   );
 };
 
